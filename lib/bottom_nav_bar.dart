@@ -132,8 +132,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
           color: widget.changeLabelColorOnSelect
               ? isSelected
                   ? widget.activeColor
-                  : Get.textTheme.subtitle2.color
-              : Get.textTheme.subtitle2.color),
+                  : widget.inactiveColor
+              : widget.inactiveColor),
     );
   }
 
