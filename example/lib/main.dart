@@ -68,7 +68,10 @@ class _HomeState extends State<Home> {
         barHeight: 70, // Default is 60
         items: [
           BottomIndicatorNavigationBarItem(
-              iconData: Icons.dashboard, label: 'Dashboard'),
+              iconData: Icons.person,
+              assetActiveIcon: 'assets/images/codehelios.jpg',
+              assetInActiveIcon: 'assets/images/android.png',
+              label: 'Dashboard'),
           BottomIndicatorNavigationBarItem(
               iconData: Icons.person, label: 'Profile'),
         ],

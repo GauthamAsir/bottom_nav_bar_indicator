@@ -8,7 +8,7 @@ class BottomIndicatorNavigationBarItem {
   final String label;
 
   BottomIndicatorNavigationBarItem({
-    @required this.iconData,
+    this.iconData,
     this.assetActiveIcon,
     this.assetInActiveIcon,
     this.label,
