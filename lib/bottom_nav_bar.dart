@@ -116,11 +116,17 @@ class _BottomNavBarState extends State<BottomNavBar> {
   }
 
   Widget setIcon(BottomIndicatorNavigationBarItem item, bool isSelected) {
-    return Icon(
-      item.iconData,
-      color: isSelected ? activeColor : widget.inactiveColor,
-      size: 26.0,
-    );
+    return item.iconData != null
+        ? Icon(
+            item.iconData,
+            color: isSelected ? activeColor : widget.inactiveColor,
+            size: 26.0,
+          )
+        : Image.asset(
+            isSelected ? item.assetActiveIcon : item.assetInActiveIcon,
+            width: 26,
+            height: 26,
+          );
   }
 
   Widget setLabel(BottomIndicatorNavigationBarItem item, bool isSelected) {
