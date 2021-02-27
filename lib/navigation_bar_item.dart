@@ -7,10 +7,10 @@ class BottomIndicatorNavigationBarItem {
   final Color backgroundColor;
   final String label;
 
-  BottomIndicatorNavigationBarItem(
-    this.assetActiveIcon,
-    this.assetInActiveIcon, {
+  BottomIndicatorNavigationBarItem({
     @required this.iconData,
+    this.assetActiveIcon,
+    this.assetInActiveIcon,
     this.label,
     this.backgroundColor = Colors.white,
   }) : assert(iconData == null || assetActiveIcon == null,
